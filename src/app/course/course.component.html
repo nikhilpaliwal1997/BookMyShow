@@ -1,0 +1,23 @@
+<p>
+   course working now!
+</p>
+<input [(ngModel)]="obj.name">
+{{obj.name}}
+<button name="sdfsd"  (click)="submitF($event)">submit</button>
+
+<table border = "1">
+  
+<tr>
+  <th>Name </th>
+  <th>E-mail </th>
+  <th>Last Name</th>
+</tr>
+<tbody>
+<tr *ngFor="let hero of mani;  let i = index">
+  <td>{{hero.name}}</td>
+  <td>{{hero.email}}</td>
+  <td>{{hero.lastName}}</td>
+</tr>
+
+</tbody>
+</table>
